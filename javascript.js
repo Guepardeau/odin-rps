@@ -2,56 +2,53 @@ let randomNumber = Math.floor(Math.random()* 3)+ 1;
 let playerSelection = prompt("Please choose Rock, Paper or Scissors!").toLowerCase();
 let compSelection;
 
-function getComputerChoice() {
+(function getComputerChoice() {
 
     if (randomNumber === 1) {
-        let compSelection = "rock"
+        return compSelection = "rock";
     } else if (randomNumber === 2) {
-        let compSelection = "paper"
+        return compSelection = "paper";
     } else if (randomNumber === 3) {
-        let compSelection = "scissors"
+        return compSelection = "scissors";
     }
+    })();  
 
-}
+console.log(compSelection);
+console.log(randomNumber);
 
- function round(playerSelection, compSelection) {
+/* function round(playerSelection, compSelection) {
    
     switch (playerSelection, compSelection) {
         case (playerSelection === "rock" && compSelection === "paper"):
-            return("Oh No! You lost, Paper beats Rock :(");
-            break;
+            console.log("Oh No! You lost, Paper beats Rock :(");
+            return playerLose;
         
         case (playerSelection === "rock" && compSelection === "scissors"):
-            return("Well done! You won, Rock beats Scissors!");
-            break;
+            console.log("Well done! You won, Rock beats Scissors!");
+            return playerWin;
         
         case (playerSelection === "paper" && compSelection === "rock"):
-            return("Well done! You won, Paper beats Rock!");
-            break;
+            console.log("Well done! You won, Paper beats Rock!");
+            return playerWin;
             
         case (playerSelection === "paper" && compSelection === "scissors"):
-            return("Oh No! You lost, Scissors beats Paper :(");
-            break;
+            console.log("Oh No! You lost, Scissors beats Paper :(");
+            return playerLose;
 
         case (playerSelection === "scissors" && compSelection === "rock"):
-            return("Oh No! You lost, Rock beats Scissors :(");
-            break;
+            console.log("Oh No! You lost, Rock beats Scissors :(");
+            return playerLose;
             
         case (playerSelection === "scissors" && compSelection === "paper"):
-            return("Well done! You won, Scissors beats Paper!");
-            break;
+            console.log("Well done! You won, Scissors beats Paper!");
+            return playerWin;
             
         case (playerSelection === compSelection):
-            return("It's a tie! Let's play again.");
-            break;
+            return tie;
                 
         default: 
-            return("Uh Oh! Something's gone wrong. Refresh the page to try again!");
-            break;
+            console.log("Uh Oh! Something's gone wrong. Refresh the page to try again!");
+             
            
     }
-}
-
-
-
-
+}*/
