@@ -72,12 +72,14 @@ game();
 
 
 function gameEnd() {
-    console.log(`You: ${playerScore} Computer ${compScore}`);
+    
     if (playerScore === 5){
         console.log("You won!!! Refresh to play again.");
+        console.log(`You: ${playerScore} Computer ${compScore}`);
         return
     } else if (compScore === 5){
         console.log("Oh no :( You lost. Refresh to try again.");
+        console.log(`You: ${playerScore} Computer ${compScore}`);
         return
     } else {
         game();
